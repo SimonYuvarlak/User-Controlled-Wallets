@@ -64,3 +64,37 @@ This task will be done in the same manner as the previous ones.
 - You will upload the user token to the Risein platform.
 `;
 };
+
+export const initialize_user_markdown = () => {
+  return `
+# Welcome To Your Fourth Task For Creating User Controlled Wallets
+
+In this task, you will complete the fourth step of creating a user controlled wallet, which is to initialize the user.
+
+At this point, you should already have the User ID.
+
+## What Does Initializing A User Mean?
+
+Initializing a user is the process of creating a user's wallets and generating the user's private keys. 
+
+This process is required before the user can send or receive funds or interact with smart contracts on the blockchain.
+
+Even though you have initialized the user and created the wallet, the end user should still complete the setup by defininf a pin and revocery methods.
+
+This task will be done in the same manner as the previous ones.
+
+- You will be updating the code in the folder \`~/src/app/api/initialize_user/route.js\`.
+- Once you initialize the user, you will receive a \`Challange Id\`. Add the Challange Id to your \`.env.local\` file under the name: \`NEXT_PUBLIC_CHALLANGE_ID\`.
+- You will upload the Challange Id to the Risein platform.
+
+## What Is A Challange?
+
+\`A challenge is a specific action that your end-users are asked to perform\`, such as initiating a transaction or executing a smart contract. 
+These challenges act as security checkpoints in the user's journey, guaranteeing that sensitive operations are only executed with the user's explicit consent.
+
+- The initial challenge that users face is setting up their PIN code and establishing a recovery method during the sign-up process. 
+- The PIN is encrypted on the user's personal device during entry, which ensures that developers or merchants do not have access to user PINs. 
+- The recovery method provides users with a way to regain access to their assets if they forget their PIN code. 
+- Users can opt for security questions as their recovery method, a well-known backup mechanism that improves the user experience while ensuring that users maintain full control over their assets.
+`;
+};
