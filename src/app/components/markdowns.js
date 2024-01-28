@@ -1,6 +1,50 @@
+export const get_app_id_markdown = () => {
+  return `
+# Welcome To Your First Task For Creating User Controlled Wallets
+
+In this task, you will complete the first step of creating a user controlled wallet, which is to get the App ID.
+
+Please note that, at this point, you should already have a Circle API key.
+
+## What is APP ID?
+
+An App ID is a unique identifier that is assigned to your application when you register it with Circle. It is used for various purposes, such as identification, configuration management, and API access. You can think of it as a digital passport for your application to interact with the Circle Platform and the Universal Community Wallet. 🛂
+
+1. Now, go to the \`~/src/api/get_app_id/route.js\` file.
+2. Copy and paste the code that you see on the screen. This will send an API call to Circle API and you will retrieve your App ID.
+3. Click on the "Get ID" button to retrieve your App ID.
+4. Finally, once you get your App ID, add this to your \`.env.local\` file under the name: \`NEXT_PUBLIC_APP_ID\` and submit your APP ID to Risein platform as your first task.`;
+};
+
+export const create_a_new_user_markdown = () => {
+  return `
+# Welcome To Your Second Task For Creating User Controlled Wallets.
+
+In this task, you will complete the second step of creating a user controlled wallet, which is to create the user.
+
+Please note that, at this point, you should already have the App ID.
+
+## What Does Creating A User Mean?
+
+To kickstart the process, it's necessary to set up and prepare the users who will be the final consumers of your application. A user, symbolizing the final user of your application, is recognized via a userID. This userID acts as the account identifier, covering all related wallets, assets, and transactions for that particular user.
+
+1. Now, go to the \`~/src/api/create_a_user/route.js\` file.
+2. Copy and paste the code that you see on the screen. This will send an API call to Circle API and you will create the user.
+3. Click on the "Create User" button to retrieve your App ID.
+4. Finally, once you get your user ID, add this to your \`.env.local\` file under the name: \`NEXT_PUBLIC_USER_ID\` and submit your USER ID to Risein platform as your second task.
+
+## IMPORTANT NOTE
+
+- Once you scroll the page you will see two fields for the output.
+- The first one is the user ID that you will copy.
+- The second one is the status code that shows if the operation was successful or not. 
+- For the successful operation, you will see 201 as the status code and the box will turn into green. 
+- If your status code is not 201, please check your code and try again (Even though you will be able to retrieve the user ID, if the status code is not 201 then the user with the given ID has not been created).`;
+};
+
 export const acquire_session_token_markdown = () => {
   return `
-# Welcome To Your Third Challenge For Creating User Controlled Wallets
+# Welcome To Your Third Task For Creating User Controlled Wallets
 
 In this task, you will complete the third step of creating a user controlled wallet, which is to get the session token and encryption key.
 
@@ -19,22 +63,4 @@ This task will be done in the same manner as the previous ones.
 - Even though the session token and encryption key are temporary, the reason why you are adding them to your \`.env.local\` file is to make sure that at the end of the user-controlled-wallet section, in the \`.env.local\` file, you will have all the necessary information to create a user-controlled-wallet.
 - You will upload the user token to the Risein platform.
 `;
-};
-
-export const get_app_id_markdown = () => {
-  return `
-    # Welcome To Your First Challenge For Creating User Controlled Wallets
-
-In this task, you will complete the first step of creating a user controlled wallet, which is to get the App ID.
-
-Please note that, at this point, you should already have a Circle API key.
-
-## What is APP ID?
-
-An App ID is a unique identifier that is assigned to your application when you register it with Circle. It is used for various purposes, such as identification, configuration management, and API access. You can think of it as a digital passport for your application to interact with the Circle Platform and the Universal Community Wallet. 🛂
-
-1. Now, go to the \`~/src/api/get_app_id/route.js\` file.
-2. Copy and paste the code that you see on the screen. This will send an API call to Circle API and you will retrieve your App ID.
-3. Click on the "Get ID" button to retrieve your App ID.
-4. Finally, once you get your App ID, add this to your \`.env.local\` file under the name: \`NEXT_PUBLIC_APP_ID\` and submit your APP ID to Risein platform as your first task.`;
 };
