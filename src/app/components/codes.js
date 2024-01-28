@@ -123,7 +123,5 @@ export const initialize_user = async () => {
       console.error(error);
     });
 };
-
-
   `.trim();
 };
