@@ -49,7 +49,7 @@ function CreateWalletForm() {
 
   return (
     <div className="p-4 bg-white mx-12 rounded">
-      <div className="grid grid-cols-6">
+      <div className="grid grid-cols-5">
         <div>
           <TextField
             label="App Id"
@@ -62,13 +62,6 @@ function CreateWalletForm() {
             label="User Token"
             onChange={onChangeHandler(setUserToken, "userToken")}
             value={userToken}
-          />
-        </div>
-        <div>
-          <TextField
-            label="Encryption Key"
-            onChange={onChangeHandler(setEncryptionKey, "encryptionKey")}
-            value={encryptionKey}
           />
         </div>
         <div>
