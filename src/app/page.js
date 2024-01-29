@@ -26,7 +26,7 @@ export default function Home() {
       </div>
 
       <Link
-        href="/get_app_id"
+        href="/create_wallet"
         className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30 before:absolute before:h-[300px] before:w-[280px] before:-translate-x-1/3 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:translate-x-2/3 before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-purple-600 after:dark:opacity-60 before:lg:h-[180px]"
       >
         <Image

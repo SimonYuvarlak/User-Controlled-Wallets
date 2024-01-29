@@ -98,3 +98,30 @@ These challenges act as security checkpoints in the user's journey, guaranteeing
 - Users can opt for security questions as their recovery method, a well-known backup mechanism that improves the user experience while ensuring that users maintain full control over their assets.
 `;
 };
+
+export const create_wallet_markdown = () => {
+  return `
+  # Welcome To The Wallet Creation
+
+  This this not a task but an explanation.
+
+  So far, you have developed this project to create a user-controlled wallet as adeveloper.
+
+  Now, you will play the role of the end user.
+  You will create a pin code and a recovery method for your wallet.
+  Only after doing that the wallet is ready to use.
+
+  Below the page, you will see a form that you will use to create a wallet.
+  - I suggest you starty from the beginning (after getting the app id) and follow the steps.
+  - Update the .env.local file during this process.
+  - At the end you will have a more clear view about the process of creating a user-controlled wallet.
+  - Then click, \`verify challange\`
+  - Follow the steps and your wallet is ready.
+
+  ## WebSDK Code
+  On the right hand side of this page, you will see the sdk code example. This is from the website \`https://www.npmjs.com/package/@circle-fin/w3s-pw-web-sdk\`.
+  In this page, you will see the code example, how to install this package using \`npm\` and finally example usage in different frameworks, like React.
+
+  If you open the file \`createWallet.js \` in the folder \`~/src/app/components/\`, you will see the code that is used to create a wallet. 
+  `;
+};

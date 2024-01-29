@@ -60,7 +60,7 @@ export const get_app_id = async () => {
 
 export const create_a_new_user_code = () => {
   return `
-  import { v4 as uuidv4 } from "uuid";
+import { v4 as uuidv4 } from "uuid";
 import axios from "axios";
 
 export const create_a_new_user = async () => {
@@ -123,5 +123,40 @@ export const initialize_user = async () => {
       console.error(error);
     });
 };
+  `.trim();
+};
+
+export const create_wallet_code = () => {
+  return `
+import { W3SSdk } from '@circle-fin/w3s-pw-web-sdk'
+
+const sdk = new W3SSdk()
+
+sdk.setAppSettings({
+  appId: '<Your App Id>',
+})
+sdk.setAuthentication({
+  userToken: '<Your user token>',
+  encryptionKey: '<Your encryption key>',
+})
+
+sdk.execute(challengeId, (error, result) => {
+  if (error) {
+    console.log(
+      \`\${error?.code?.toString() || "Unknown code"}: \${
+        error?.message ?? 'Error!'
+      }\`
+    )
+
+    return
+  }
+
+  console.log(\`Challenge: \${result.type}\`)
+  console.log(\`status: \${result.status}\`)
+
+  if (result.data) {
+    console.log(\`signature: \${result.data?.signature}\`)
+  }
+})
   `.trim();
 };
