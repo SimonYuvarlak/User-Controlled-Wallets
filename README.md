@@ -7,6 +7,8 @@
 - You should switch to the study branch first where some parts of the code are missing.
 - This tutorial is based on you working on the study repo but you can also just follow the main repo if you do not want to work with the code.
 
+- Next tutorial can be found [here](https://github.com/SimonYuvarlak/Working-With-User-Controlled-Wallets.git)
+
 ## Using This Repository
 
 You can clone this repo with the command `git clone <repo url>`
